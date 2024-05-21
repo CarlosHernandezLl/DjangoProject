@@ -1,0 +1,15 @@
+<!-- mi_aplicacion/templates/mi_aplicacion/lista_libros.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <h1>Lista de Libros</h1>
+    <ul>
+        {% for libro in libros %}
+            <li>{{ libro.titulo }} - {{ libro.autor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
